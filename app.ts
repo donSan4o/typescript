@@ -128,7 +128,7 @@ console.log(user.incAge(user, 5));
 
 interface INumbersActions {
     sum: () => number;
-    showSum: () => any;
+    showSum: () => void;
 }
 
 class Numbers implements INumbersActions {
@@ -136,7 +136,7 @@ class Numbers implements INumbersActions {
     sum(): number {
         return this.a + this.b
     }
-    showSum(): any {
+    showSum(): void {
         console.log(this.a + this.b);
     }
 }
